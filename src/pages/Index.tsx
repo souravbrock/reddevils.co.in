@@ -54,13 +54,15 @@ const Navigation = () => {
       <div className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2">
-            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-              <PartyPopper className="w-7 h-7 text-primary-foreground" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-xl leading-tight">Red Devils</span>
-              <span className="text-xs text-muted-foreground">Event Management</span>
+          <a href="#home" className="flex items-center gap-3">
+            <img 
+              src="/logo.svg" 
+              alt="Red Devils Event Management" 
+              className="h-14 w-auto"
+            />
+            <div className="flex flex-col hidden sm:flex">
+              <span className="font-bold text-lg leading-tight">Red Devils</span>
+              <span className="text-xs text-muted-foreground">Event Management Pvt Ltd</span>
             </div>
           </a>
 
@@ -545,8 +547,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold mb-1">Our Office</h3>
                   <p className="text-muted-foreground">
-                    123 Park Street, 4th Floor<br />
-                    Kolkata, West Bengal 700016
+                    New Town AA-III<br />
+                    Kolkata 700156, West Bengal
                   </p>
                 </div>
               </div>
@@ -558,8 +560,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold mb-1">Phone</h3>
                   <p className="text-muted-foreground">
-                    +91 33 2245 6789<br />
-                    +91 98765 43210
+                    <a href="tel:+918442980101" className="hover:text-primary transition-colors">+91-844-298-0101</a><br />
+                    <a href="tel:+919836180680" className="hover:text-primary transition-colors">+91-9836-180-680</a>
                   </p>
                 </div>
               </div>
@@ -571,8 +573,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
                   <p className="text-muted-foreground">
-                    info@reddevilsevents.com<br />
-                    bookings@reddevilsevents.com
+                    <a href="mailto:info@reddevils.co.in" className="hover:text-primary transition-colors">info@reddevils.co.in</a><br />
+                    <a href="mailto:bookings@reddevils.co.in" className="hover:text-primary transition-colors">bookings@reddevils.co.in</a>
                   </p>
                 </div>
               </div>
@@ -686,17 +688,19 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-2 space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                <PartyPopper className="w-7 h-7 text-primary-foreground" />
-              </div>
+            <div className="flex items-center gap-3">
+              <img 
+                src="/logo.svg" 
+                alt="Red Devils Event Management" 
+                className="h-14 w-auto"
+              />
               <div className="flex flex-col">
-                <span className="font-bold text-xl leading-tight">Red Devils</span>
+                <span className="font-bold text-lg leading-tight">Red Devils</span>
                 <span className="text-xs text-muted-foreground">Event Management Pvt Ltd</span>
               </div>
             </div>
             <p className="text-muted-foreground max-w-md">
-              Creating extraordinary events and unforgettable experiences since 2009. 
+              Creating extraordinary events and unforgettable experiences. 
               Your vision, our expertise - together we make magic happen.
             </p>
             <div className="flex gap-3">
@@ -754,10 +758,11 @@ const Footer = () => {
 const LandingPage = () => {
   useSeoMeta({
     title: 'Red Devils Event Management Pvt Ltd | Kolkata\'s Premier Event Planners',
-    description: 'Transform your dreams into unforgettable experiences. Kolkata\'s leading event management company specializing in weddings, corporate events, birthday parties, and more. 15+ years of excellence.',
-    ogTitle: 'Red Devils Event Management Pvt Ltd',
-    ogDescription: 'Kolkata\'s premier event management company creating extraordinary experiences since 2009.',
-    ogImage: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1200&h=630&fit=crop',
+    description: 'Transform your dreams into unforgettable experiences. Kolkata\'s leading event management company specializing in weddings, corporate events, birthday parties, and more. Contact: info@reddevils.co.in',
+    ogTitle: 'Red Devils Event Management Pvt Ltd | Kolkata\'s Premier Event Planners',
+    ogDescription: 'Transform your dreams into unforgettable experiences. Kolkata\'s leading event management company specializing in weddings, corporate events, birthday parties, and more.',
+    ogUrl: 'https://reddevils.co.in',
+    ogSiteName: 'Red Devils Event Management',
   });
 
   return (
